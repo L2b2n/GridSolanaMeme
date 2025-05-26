@@ -29,7 +29,7 @@ Setup and Start
 Download:
 
 Windows: Download the .exe file and run it.
-Linux: Download the bot file and make it executable:chmod +x Gridstart.js
+Linux: Download the bot file and make it executable:chmod +x gridbot
 
 
 
@@ -38,9 +38,6 @@ Prepare Server (Linux):
 
 Log in via SSH:ssh root@your-server-ip
 
-
-Install Node.js:apt update
-apt install -y nodejs npm
 
 
 
@@ -52,13 +49,10 @@ cd ~/grid
 
 Create Bot File:
 
-Create Gridstart.js with the bot code (using nano Gridstart.js or copy it).
-Alternatively: Download the pre-built file.
+ Download the pre-built file.
+windows ore linux
 
 
-Install Dependencies:
-npm init -y
-npm install async-retry axios bs58 chalk dotenv inquirer winston @project-serum/anchor @solana/spl-token @solana/web3.js
 
 
 Configure Environment Variables:
@@ -68,6 +62,7 @@ Create .env:nano .env
 
 Add:PRIVATE_KEY=your_private_key_in_base58
 RPC_ENDPOINT=https://api.mainnet-beta.solana.com
+CHART_API_KEY=xxxxx   ( https://www.solanatracker.io/?ref=R8X7VORV *apikey*)
 
 
 Optional: Use Helius RPC (https://dashboard.helius.dev/) for better performance.
@@ -84,7 +79,7 @@ Start the Bot:
 Start tmux:tmux new -s gridbot
 
 
-Run the bot:node Gridstart.js
+Run the bot:node gridbot
 
 
 Configure:
