@@ -62,7 +62,7 @@ Create .env:nano .env
 
 Add:PRIVATE_KEY=your_private_key_in_base58
 RPC_ENDPOINT=https://api.mainnet-beta.solana.com
-CHART_API_KEY=xxxxx   ( https://www.solanatracker.io/?ref=R8X7VORV *apikey*)
+
 
 
 Optional: Use Helius RPC (https://dashboard.helius.dev/) for better performance.
